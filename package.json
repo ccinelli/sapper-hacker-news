@@ -8,7 +8,7 @@
     "sapper": "sapper build --legacy",
     "export": "sapper export",
     "start": "node __sapper__/build",
-    "prod": "sapper build --legacy && node __sapper__/build",
+    "prod": "npm install --only=dev && sapper build --legacy && node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",

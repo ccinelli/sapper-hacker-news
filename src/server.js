@@ -13,7 +13,7 @@ const app = express() // You can also use Express
 app.listen(process.env.PORT || 8080);
 
 import spdy from 'spdy';
-if (process.env.SSL_PORT !== 0) {
+if (process.env.SSL_PORT !== '0') {
 	const sslPort = process.env.SSL_PORT || 8443;
 	const fs = require('fs');
 	try {
